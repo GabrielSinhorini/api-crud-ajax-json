@@ -1,0 +1,24 @@
+<script type="text/javascript" src="../js/script.js" defer></script>
+
+<div class="alt-senha">
+    <h1>Alterar Senha</h1>
+    <form method="POST" class="pass-input">
+        <input type="password" placeholder="Senha atual" id="oldPass" name="oldpass" style="visibility: visible" required>
+        <div id="passInput">
+            <input type="password" placeholder="Nova senha" name="newpass" id="newpass" required> 
+            <input type="password" placeholder="Repita nova senha" id="newpass2" name="newpass2" required>
+        </div>
+        <input type="button" id="verificarSenha" value="Verificar Segurança">
+        <input type="submit" value="Trocar senha" id="trocarSenha" disabled>
+    </form>
+    <div id="safePass">
+        Senha sem vunerabilidades/vazamentos
+    </div>
+    <div id="unsafePass">
+        Senha com vazamentos!
+    </div>
+    <div id="httpCode">
+
+    </div>
+</div>
+
